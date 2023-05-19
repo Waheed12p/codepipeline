@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Menu Example</title>
+    <style>
+      /* Menu styling */
+      #menu {
+        background: linear-gradient(to right, #0077be, #4cae4c);
+        display: flex;
+        text-align: centre;
+        padding: 30px 400px;
+        margin:0;
+        list-style: none;
+	  	 
+      }
+      
+      #menu a {
+	  align: center;
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+ 	  align: centre;
+        font-size: 20px;
+      }
+
+      /* Submenu styling */
+      .submenu {
+        display: none;
+        position: absolute;
+        background-color: linear-gradient(to right, blue, orange);
+        padding: 5px 10px;
+        margin: 0;
+      }
+      
+      .submenu a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        padding: 5px 0;
+      }
+
+	.box {
+  position: motion;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to right, #87cefa, #ffcc99);
+
+}
+
+
+.box {
+  width: 1470x;
+  height: 200px;
+  background: linear-gradient(to right, #87cefa, #ffcc99);
+
+
+}
+
+<! --/*---------------------------*/ -->
+.dna-container {
+  height:0px;
+  width:1px;
+  border-bottom:1px solid #000;
+  
+  -webkit-animation: increase 3s;
+  -moz-animation:    increase 3s; 
+  -o-animation:      increase 3s; 
+  animation:         increase 3s; 
+  animation-fill-mode: forwards;
+}
+
+@keyframes increase {
+    100% {
+        width: 300px;
+    }
+}
+
+
+
+    
+      /* Show submenu on hover */
+      #menu > li:hover .submenu {
+        display: block;
+      }
+      
+    </style>
+  </head>
+  <body>
+<div class="box">
+
+  </div>
+<div class="dna-container">
+  
+</div>
+
+    <nav>
+      <ul id="menu">
+        <li>
+          <a href="#">About Us</a>
+          <ul class="submenu">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">Mission</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+          <ul class="submenu">
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Phone</a></li>
+            <li><a href="#">Address</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Technicak Skills</a>
+          <ul class="submenu">
+            <li><a href="#">Product 1</a></li>
+            <li><a href="#">Product 2</a></li>
+            <li><a href="#">Product 3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Experience</a>
+          <ul class="submenu">
+            <li><a href="#">Service 1</a></li>
+            <li><a href="#">Service 2</a></li>
+            <li><a href="#">Service 3</a></li>
+          </ul>
+        </li>
+ 	 <li>
+          <a href="#">Blogs</a>
+          <ul class="submenu">
+            <li><a href="#">Service 1</a></li>
+            <li><a href="#">Service 2</a></li>
+            <li><a href="#">Service 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
+
